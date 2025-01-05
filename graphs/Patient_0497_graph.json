@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0497"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        },
+        {
+            "type": "lesion",
+            "id": "nodule"
+        },
+        {
+            "type": "lesion_location",
+            "id": "right upper, rib"
+        },
+        {
+            "type": "lesion_size",
+            "id": "1.7 cm"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe subsegmental atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0497",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0497",
+            "target": "nodule"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0497",
+            "target": "lower lobe subsegmental atelectasis"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "nodule",
+            "target": "right upper, rib"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "nodule",
+            "target": "1.7 cm"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1568"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcifications of the thoracic aorta"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1568",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1568",
+            "target": "calcifications of the thoracic aorta"
+        }
+    ]
+}

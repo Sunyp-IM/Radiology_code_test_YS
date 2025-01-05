@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1870"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "aortic atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1870",
+            "target": "subsegmental atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1870",
+            "target": "aortic atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1870",
+            "target": "degenerative changes"
+        }
+    ]
+}

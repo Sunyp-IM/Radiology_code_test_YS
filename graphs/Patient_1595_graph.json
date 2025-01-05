@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1595"
+        },
+        {
+            "type": "abnormality",
+            "id": "pneumothorax"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "13 mm"
+        },
+        {
+            "type": "abnormality",
+            "id": "emphysema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1595",
+            "target": "pneumothorax"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1595",
+            "target": "emphysema"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pneumothorax",
+            "target": "13 mm"
+        }
+    ]
+}

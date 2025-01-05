@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1919"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes, pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1919",
+            "target": "atelectasis, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1919",
+            "target": "low lung volumes, pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1919",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1919",
+            "target": "subsegmental atelectasis"
+        }
+    ]
+}

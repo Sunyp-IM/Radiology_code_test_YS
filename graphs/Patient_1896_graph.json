@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1896"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "relaxation atelectasis, left basilar opacity"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1896",
+            "target": "left basilar opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1896",
+            "target": "relaxation atelectasis, left basilar opacity"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1896",
+            "target": "pneumonia"
+        }
+    ]
+}

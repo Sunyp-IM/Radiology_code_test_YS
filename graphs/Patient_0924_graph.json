@@ -1,0 +1,81 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0924"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiomediastinal"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0924",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0924",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0924",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0924",
+            "target": "enlargement of the cardiomediastinal"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0924",
+            "target": "pleural effusion, pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0924",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "pleural effusion, pulmonary edema"
+        }
+    ]
+}

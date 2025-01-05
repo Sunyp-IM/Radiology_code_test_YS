@@ -1,0 +1,99 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1665"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "1 cm, small"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcifications of the thoracic aorta, atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe opacities, atelectasis, aspiration"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "lesion",
+            "id": "nodule"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1665",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1665",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1665",
+            "target": "enlargement of the cardiac"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1665",
+            "target": "calcifications of the thoracic aorta, atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1665",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1665",
+            "target": "nodule"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "opacity",
+            "target": "1 cm, small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "opacity",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "lower lobe opacities, atelectasis, aspiration"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "lower lobe opacities, atelectasis, aspiration",
+            "target": "small"
+        }
+    ]
+}

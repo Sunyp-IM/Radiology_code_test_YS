@@ -1,0 +1,85 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0634"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "abnormality",
+            "id": "tortuous thoracic aorta"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0634",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0634",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0634",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0634",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0634",
+            "target": "tortuous thoracic aorta"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0634",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0634",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "atelectasis"
+        }
+    ]
+}

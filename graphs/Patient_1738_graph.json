@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1738"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "artery calcific"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1738",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1738",
+            "target": "atelectasis, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1738",
+            "target": "artery calcific"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1738",
+            "target": "degenerative changes"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1912"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis, volume loss, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "Atherosclerotic, calcification"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1912",
+            "target": "subsegmental atelectasis, volume loss, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1912",
+            "target": "pulmonary interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1912",
+            "target": "Atherosclerotic, calcification"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1912",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1912",
+            "target": "subsegmental atelectasis"
+        }
+    ]
+}

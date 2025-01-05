@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0112"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcification"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0112",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0112",
+            "target": "calcification"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0112",
+            "target": "degenerative changes"
+        }
+    ]
+}

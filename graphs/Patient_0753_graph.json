@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0753"
+        },
+        {
+            "type": "abnormality",
+            "id": "atherosclerotic calcifications, Atherosclerotic"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0753",
+            "target": "atherosclerotic calcifications, Atherosclerotic"
+        }
+    ]
+}

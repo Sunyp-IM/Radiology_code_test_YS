@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0290"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "pneumothorax"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "2.4 cm, 1.7 cm, 2 mm, 10 mm, 3.6 cm, 1.4 cm"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0290",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0290",
+            "target": "pneumothorax"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pneumothorax",
+            "target": "2.4 cm, 1.7 cm, 2 mm, 10 mm, 3.6 cm, 1.4 cm"
+        }
+    ]
+}

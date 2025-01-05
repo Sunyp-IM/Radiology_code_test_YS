@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0788"
+        },
+        {
+            "type": "abnormality",
+            "id": "dextroconvex thoracic curvature, degenerative changes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0788",
+            "target": "dextroconvex thoracic curvature, degenerative changes"
+        }
+    ]
+}

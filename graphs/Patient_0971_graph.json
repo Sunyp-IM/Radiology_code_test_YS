@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0971"
+        },
+        {
+            "type": "lesion",
+            "id": "nodule"
+        },
+        {
+            "type": "lesion_size",
+            "id": "5 mm"
+        },
+        {
+            "type": "disease",
+            "id": "hiatal hernia"
+        },
+        {
+            "type": "lesion_location",
+            "id": "apical"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0971",
+            "target": "nodule"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0971",
+            "target": "hiatal hernia"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "nodule",
+            "target": "5 mm"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "nodule",
+            "target": "apical"
+        }
+    ]
+}

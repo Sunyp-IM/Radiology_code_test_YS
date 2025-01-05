@@ -1,0 +1,94 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1072"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "hiatus hernia"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "large"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1072",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1072",
+            "target": "pulmonary interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1072",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1072",
+            "target": "hiatus hernia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1072",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1072",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "hiatus hernia",
+            "target": "large"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration"
+        }
+    ]
+}

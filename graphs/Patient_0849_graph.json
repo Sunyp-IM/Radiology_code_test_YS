@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0849"
+        },
+        {
+            "type": "abnormality",
+            "id": "bibasilar patchy opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "bibasilar patchy opacities, atelectasis, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0849",
+            "target": "bibasilar patchy opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0849",
+            "target": "bibasilar patchy opacities, atelectasis, aspiration"
+        }
+    ]
+}

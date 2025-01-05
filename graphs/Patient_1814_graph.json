@@ -1,0 +1,72 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1814"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacity"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1814",
+            "target": "left basilar opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1814",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1814",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1814",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "left basilar opacity",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration"
+        }
+    ]
+}

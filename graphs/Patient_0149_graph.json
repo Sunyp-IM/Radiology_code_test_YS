@@ -1,0 +1,76 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0149"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural calcifications"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiomediastinal"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0149",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0149",
+            "target": "pleural calcifications"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0149",
+            "target": "enlargement of the cardiomediastinal"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0149",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0149",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0149",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration, opacity"
+        }
+    ]
+}

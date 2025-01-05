@@ -1,0 +1,72 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0977"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, atelectasis, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration, infection"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0977",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0977",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0977",
+            "target": "low lung volumes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0977",
+            "target": "pleural effusion, atelectasis, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0977",
+            "target": "aspiration, infection"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "pleural effusion, atelectasis, opacity"
+        }
+    ]
+}

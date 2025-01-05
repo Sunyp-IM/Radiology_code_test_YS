@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0861"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "pneumothorax"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "9 mm"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0861",
+            "target": "subsegmental atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0861",
+            "target": "pneumothorax"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pneumothorax",
+            "target": "9 mm"
+        }
+    ]
+}

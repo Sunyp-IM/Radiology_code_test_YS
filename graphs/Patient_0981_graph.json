@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0981"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis, left hemidiaphragm"
+        },
+        {
+            "type": "abnormality",
+            "id": "basilar subsegmental atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0981",
+            "target": "subsegmental atelectasis, left hemidiaphragm"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0981",
+            "target": "basilar subsegmental atelectasis"
+        }
+    ]
+}

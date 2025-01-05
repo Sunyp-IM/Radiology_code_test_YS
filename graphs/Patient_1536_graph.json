@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1536"
+        },
+        {
+            "type": "lesion",
+            "id": "nodules"
+        },
+        {
+            "type": "abnormality",
+            "id": "cardiomegaly"
+        },
+        {
+            "type": "abnormality",
+            "id": "lymphadenopathy"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1536",
+            "target": "nodules"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1536",
+            "target": "cardiomegaly"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1536",
+            "target": "lymphadenopathy"
+        }
+    ]
+}

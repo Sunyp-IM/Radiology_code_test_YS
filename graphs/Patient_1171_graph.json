@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1171"
+        },
+        {
+            "type": "abnormality",
+            "id": "volume loss, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1171",
+            "target": "volume loss, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1171",
+            "target": "degenerative changes"
+        }
+    ]
+}

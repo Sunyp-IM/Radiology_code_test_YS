@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1408"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes, cardiomegaly"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1408",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1408",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1408",
+            "target": "degenerative changes, cardiomegaly"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1408",
+            "target": "interstitial pulmonary edema, atelectasis"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1348"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "lesion",
+            "id": "mass"
+        },
+        {
+            "type": "lesion_location",
+            "id": "lower"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        },
+        {
+            "type": "lesion_location",
+            "id": "superior segment, left upper, lower"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1348",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1348",
+            "target": "mass"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1348",
+            "target": "subsegmental atelectasis"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "mass",
+            "target": "lower"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "mass",
+            "target": "superior segment, left upper, lower"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1730"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusions right"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, atelectasis, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, opacity"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1730",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1730",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1730",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1730",
+            "target": "pleural effusions right"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1730",
+            "target": "pleural effusion, atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1730",
+            "target": "pleural effusion, opacity"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1730",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration"
+        }
+    ]
+}

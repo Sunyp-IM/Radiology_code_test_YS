@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0267"
+        },
+        {
+            "type": "abnormality",
+            "id": "hyperinflated, atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "atherosclerotic calcifications, Atherosclerotic"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0267",
+            "target": "hyperinflated, atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0267",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0267",
+            "target": "atherosclerotic calcifications, Atherosclerotic"
+        }
+    ]
+}

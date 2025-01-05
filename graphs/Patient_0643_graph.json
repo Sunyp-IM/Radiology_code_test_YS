@@ -1,0 +1,54 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0643"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, aspiration, opacity"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0643",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0643",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0643",
+            "target": "atelectasis, aspiration, opacity"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "opacity",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "atelectasis, aspiration, opacity"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0637"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "lesion",
+            "id": "nodule"
+        },
+        {
+            "type": "lesion_size",
+            "id": "6 mm"
+        },
+        {
+            "type": "abnormality",
+            "id": "left hemidiaphragm"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcification of the aorta, Atherosclerotic"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes, thoracic kyphosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "cardiomegaly"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0637",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0637",
+            "target": "nodule"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0637",
+            "target": "left hemidiaphragm"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0637",
+            "target": "calcification of the aorta, Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0637",
+            "target": "degenerative changes, thoracic kyphosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0637",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0637",
+            "target": "cardiomegaly"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "nodule",
+            "target": "6 mm"
+        }
+    ]
+}

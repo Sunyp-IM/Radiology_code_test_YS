@@ -1,0 +1,81 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1961"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, pleural effusion"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe opacities, atelectasis, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1961",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1961",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1961",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1961",
+            "target": "interstitial pulmonary edema, pleural effusion"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1961",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "interstitial pulmonary edema, pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "lower lobe opacities, atelectasis, aspiration"
+        }
+    ]
+}

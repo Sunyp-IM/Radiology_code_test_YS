@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1760"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "rib fractures"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1760",
+            "target": "interstitial pulmonary edema, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1760",
+            "target": "rib fractures"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1760",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1760",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration, opacities"
+        }
+    ]
+}

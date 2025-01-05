@@ -1,0 +1,76 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0038"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "small pleural effusions"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcification"
+        },
+        {
+            "type": "abnormality",
+            "id": "vascular calcifications"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe atelectasis, opacity"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0038",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0038",
+            "target": "small pleural effusions"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0038",
+            "target": "calcification"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0038",
+            "target": "vascular calcifications"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0038",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0038",
+            "target": "lower lobe atelectasis, opacity"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small pleural effusions",
+            "target": "small"
+        }
+    ]
+}

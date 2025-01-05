@@ -1,0 +1,76 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1305"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusions right"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac"
+        },
+        {
+            "type": "abnormality",
+            "id": "vascular calcifications"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, atelectasis, opacity"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1305",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1305",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1305",
+            "target": "pleural effusions right"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1305",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1305",
+            "target": "enlargement of the cardiac"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1305",
+            "target": "vascular calcifications"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1305",
+            "target": "pleural effusion, atelectasis, opacity"
+        }
+    ]
+}

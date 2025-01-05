@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1922"
+        },
+        {
+            "type": "disease",
+            "id": "hiatal hernia"
+        },
+        {
+            "type": "abnormality",
+            "id": "atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "type": "abnormality",
+            "id": "chest wall emphysema"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1922",
+            "target": "hiatal hernia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1922",
+            "target": "atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1922",
+            "target": "chest wall emphysema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1922",
+            "target": "degenerative changes"
+        }
+    ]
+}

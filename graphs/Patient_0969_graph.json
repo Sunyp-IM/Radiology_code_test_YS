@@ -1,0 +1,103 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0969"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "pneumothorax"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "7 mm, small"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac"
+        },
+        {
+            "type": "abnormality",
+            "id": "relaxation atelectasis, pleural effusion"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, aspiration, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0969",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0969",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0969",
+            "target": "pneumothorax"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0969",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0969",
+            "target": "enlargement of the cardiac"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0969",
+            "target": "relaxation atelectasis, pleural effusion"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0969",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0969",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pneumothorax",
+            "target": "7 mm, small"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "atelectasis, aspiration, opacities"
+        }
+    ]
+}

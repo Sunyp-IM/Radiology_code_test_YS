@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0777"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac mediastinal silhouette"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0777",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0777",
+            "target": "enlargement of the cardiac mediastinal silhouette"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0777",
+            "target": "atelectasis"
+        }
+    ]
+}

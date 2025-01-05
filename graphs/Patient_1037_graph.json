@@ -1,0 +1,80 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1037"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "lesion",
+            "id": "lesion"
+        },
+        {
+            "type": "lesion_location",
+            "id": "lower"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1037",
+            "target": "low lung volumes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1037",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1037",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1037",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1037",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1037",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "lesion",
+            "target": "lower"
+        }
+    ]
+}

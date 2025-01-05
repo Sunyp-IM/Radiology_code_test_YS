@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1048"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "glenohumeral subluxation, deformity"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1048",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1048",
+            "target": "glenohumeral subluxation, deformity"
+        }
+    ]
+}

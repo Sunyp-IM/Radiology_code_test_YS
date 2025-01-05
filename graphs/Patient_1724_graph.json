@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1724"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "Atherosclerotic, calcification"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes, atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1724",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1724",
+            "target": "Atherosclerotic, calcification"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1724",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1724",
+            "target": "low lung volumes, atelectasis"
+        }
+    ]
+}

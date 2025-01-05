@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1712"
+        },
+        {
+            "type": "abnormality",
+            "id": "Atherosclerotic, calcification"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1712",
+            "target": "Atherosclerotic, calcification"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1712",
+            "target": "degenerative changes"
+        }
+    ]
+}

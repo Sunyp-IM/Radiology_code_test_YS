@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1434"
+        },
+        {
+            "type": "abnormality",
+            "id": "right basilar opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "tortuous thoracic aorta, cardiomegaly"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "right basilar opacities, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1434",
+            "target": "right basilar opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1434",
+            "target": "tortuous thoracic aorta, cardiomegaly"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1434",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1434",
+            "target": "right basilar opacities, aspiration"
+        }
+    ]
+}

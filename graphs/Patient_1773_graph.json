@@ -1,0 +1,77 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1773"
+        },
+        {
+            "type": "lesion",
+            "id": "lesion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "large"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "volume loss"
+        },
+        {
+            "type": "lesion",
+            "id": "mass"
+        },
+        {
+            "type": "lesion_location",
+            "id": "apical"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1773",
+            "target": "lesion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1773",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1773",
+            "target": "volume loss"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1773",
+            "target": "mass"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "lesion",
+            "target": "large"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "large",
+            "target": "mass"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "large",
+            "target": "opacity"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "mass",
+            "target": "apical"
+        }
+    ]
+}

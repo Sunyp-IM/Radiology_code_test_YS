@@ -1,0 +1,67 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1287"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "Atherosclerotic, calcifications"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1287",
+            "target": "low lung volumes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1287",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1287",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1287",
+            "target": "Atherosclerotic, calcifications"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1287",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pulmonary edema",
+            "target": "small"
+        }
+    ]
+}

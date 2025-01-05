@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0216"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcification of the aorta, Atherosclerotic"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0216",
+            "target": "calcification of the aorta, Atherosclerotic"
+        }
+    ]
+}

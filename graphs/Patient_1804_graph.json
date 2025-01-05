@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1804"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "Atherosclerotic, calcification"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1804",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1804",
+            "target": "Atherosclerotic, calcification"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1804",
+            "target": "pneumonia"
+        }
+    ]
+}

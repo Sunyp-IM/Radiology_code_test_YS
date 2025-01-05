@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1782"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac, low lung volumes"
+        },
+        {
+            "type": "abnormality",
+            "id": "aortic atherosclerotic calcifications, degenerative changes, Atherosclerotic"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration, opacity"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1782",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1782",
+            "target": "enlargement of the cardiac, low lung volumes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1782",
+            "target": "aortic atherosclerotic calcifications, degenerative changes, Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1782",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration, opacity"
+        }
+    ]
+}

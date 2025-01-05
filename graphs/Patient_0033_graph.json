@@ -1,0 +1,85 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0033"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "small pleural effusions"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "cardiomegaly"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcifications"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, cardiomegaly"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0033",
+            "target": "low lung volumes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0033",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0033",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0033",
+            "target": "small pleural effusions"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0033",
+            "target": "cardiomegaly"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0033",
+            "target": "calcifications"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0033",
+            "target": "interstitial pulmonary edema, cardiomegaly"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small pleural effusions",
+            "target": "small"
+        }
+    ]
+}

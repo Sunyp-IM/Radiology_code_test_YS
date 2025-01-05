@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1906"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial disease, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pneumothorax"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "13 mm, 20 mm, 4 mm, 6 mm"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial lung disease, pulmonary edema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1906",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1906",
+            "target": "interstitial disease, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1906",
+            "target": "pneumothorax"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1906",
+            "target": "interstitial lung disease, pulmonary edema"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pneumothorax",
+            "target": "13 mm, 20 mm, 4 mm, 6 mm"
+        }
+    ]
+}

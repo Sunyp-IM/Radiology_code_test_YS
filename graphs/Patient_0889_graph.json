@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0889"
+        },
+        {
+            "type": "abnormality",
+            "id": "hyperinflated"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0889",
+            "target": "hyperinflated"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0874"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "volume loss"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac"
+        },
+        {
+            "type": "abnormality",
+            "id": "sternal fracture"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe opacities, aspiration"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary interstitial edema, cardiomegaly"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0874",
+            "target": "lower lobe opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0874",
+            "target": "volume loss"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0874",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0874",
+            "target": "enlargement of the cardiac"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0874",
+            "target": "sternal fracture"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0874",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0874",
+            "target": "pulmonary interstitial edema, cardiomegaly"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "lower lobe opacities, aspiration"
+        }
+    ]
+}

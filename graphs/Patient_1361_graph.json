@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1361"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial opacities, atelectasis, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1361",
+            "target": "interstitial opacities, atelectasis, aspiration"
+        }
+    ]
+}

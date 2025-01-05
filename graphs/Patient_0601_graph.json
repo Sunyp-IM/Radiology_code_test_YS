@@ -1,0 +1,67 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0601"
+        },
+        {
+            "type": "abnormality",
+            "id": "emphysematous change, hyperlucent"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "vascular calcifications"
+        },
+        {
+            "type": "abnormality",
+            "id": "emphysema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0601",
+            "target": "emphysematous change, hyperlucent"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0601",
+            "target": "subsegmental atelectasis, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0601",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0601",
+            "target": "vascular calcifications"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0601",
+            "target": "emphysema"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        }
+    ]
+}

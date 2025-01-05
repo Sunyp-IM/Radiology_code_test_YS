@@ -1,0 +1,103 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1441"
+        },
+        {
+            "type": "abnormality",
+            "id": "emphysema"
+        },
+        {
+            "type": "abnormality",
+            "id": "left hemidiaphragm, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "lymphadenopathy"
+        },
+        {
+            "type": "lesion",
+            "id": "mass"
+        },
+        {
+            "type": "lesion_location",
+            "id": "mediastinum, left hilum"
+        },
+        {
+            "type": "lesion_location",
+            "id": "left hilar"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia, obstructive pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1441",
+            "target": "emphysema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1441",
+            "target": "left hemidiaphragm, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1441",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1441",
+            "target": "lymphadenopathy"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1441",
+            "target": "pneumonia, obstructive pneumonia"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "pleural effusion, opacities"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "mass",
+            "target": "mediastinum, left hilum"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "mass",
+            "target": "left hilar"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia, obstructive pneumonia",
+            "target": "pleural effusion, opacities"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1039"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial airspace opacities, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "left bibasilar atelectasis"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, aspiration, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1039",
+            "target": "interstitial airspace opacities, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1039",
+            "target": "left bibasilar atelectasis"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1039",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1039",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "pleural effusion, aspiration, opacity"
+        }
+    ]
+}

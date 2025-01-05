@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0332"
+        },
+        {
+            "type": "abnormality",
+            "id": "atherosclerotic calcifications, tortuous thoracic aorta, Atherosclerotic"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0332",
+            "target": "atherosclerotic calcifications, tortuous thoracic aorta, Atherosclerotic"
+        }
+    ]
+}

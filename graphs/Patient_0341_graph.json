@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0341"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, emphysema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0341",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0341",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0341",
+            "target": "interstitial pulmonary edema, emphysema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0341",
+            "target": "atelectasis, aspiration"
+        }
+    ]
+}

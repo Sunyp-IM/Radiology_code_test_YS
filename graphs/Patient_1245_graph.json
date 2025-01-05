@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1245"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlarged cardiac silhouette"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcifications of the thoracic aorta, atherosclerotic calcifications, Atherosclerotic"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1245",
+            "target": "enlarged cardiac silhouette"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1245",
+            "target": "calcifications of the thoracic aorta, atherosclerotic calcifications, Atherosclerotic"
+        }
+    ]
+}

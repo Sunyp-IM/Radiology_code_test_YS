@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1593"
+        },
+        {
+            "type": "abnormality",
+            "id": "postoperative atelectasis, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pneumothorax"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "11 mm"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1593",
+            "target": "postoperative atelectasis, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1593",
+            "target": "pneumothorax"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1593",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pneumothorax",
+            "target": "11 mm"
+        }
+    ]
+}

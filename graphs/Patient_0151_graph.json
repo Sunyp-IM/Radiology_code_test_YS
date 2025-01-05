@@ -1,0 +1,81 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0151"
+        },
+        {
+            "type": "abnormality",
+            "id": "basilar subsegmental atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "cardiomegaly"
+        },
+        {
+            "type": "abnormality",
+            "id": "atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "left bibasilar atelectasis, pleural effusion"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0151",
+            "target": "basilar subsegmental atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0151",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0151",
+            "target": "cardiomegaly"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0151",
+            "target": "atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0151",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0151",
+            "target": "left bibasilar atelectasis, pleural effusion"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "left bibasilar atelectasis, pleural effusion"
+        }
+    ]
+}

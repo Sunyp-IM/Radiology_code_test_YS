@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0476"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, atelectasis"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0476",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0476",
+            "target": "pleural effusion, atelectasis"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion, atelectasis",
+            "target": "small"
+        }
+    ]
+}

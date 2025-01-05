@@ -1,0 +1,80 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0182"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the RIGHT, lymphadenopathy"
+        },
+        {
+            "type": "lesion",
+            "id": "nodularity"
+        },
+        {
+            "type": "lesion_location",
+            "id": "hilar region, mediastinum"
+        },
+        {
+            "type": "abnormality",
+            "id": "atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "disease",
+            "id": "bronchopneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration, opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0182",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0182",
+            "target": "enlargement of the RIGHT, lymphadenopathy"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0182",
+            "target": "atherosclerotic calcifications, Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0182",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0182",
+            "target": "bronchopneumonia"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "nodularity",
+            "target": "hilar region, mediastinum"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "bronchopneumonia",
+            "target": "aspiration, opacities"
+        }
+    ]
+}

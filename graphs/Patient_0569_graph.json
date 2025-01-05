@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0569"
+        },
+        {
+            "type": "disease",
+            "id": "pulmonary fibrosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "fibrosis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0569",
+            "target": "pulmonary fibrosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pulmonary fibrosis",
+            "target": "fibrosis"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0662"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacity, left hemidiaphragm"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcification"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, aspiration, opacities, infection"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary interstitial edema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0662",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0662",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0662",
+            "target": "left basilar opacity, left hemidiaphragm"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0662",
+            "target": "calcification"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0662",
+            "target": "atelectasis, aspiration, opacities, infection"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0662",
+            "target": "pulmonary interstitial edema"
+        }
+    ]
+}

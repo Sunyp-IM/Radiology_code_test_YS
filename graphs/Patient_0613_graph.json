@@ -1,0 +1,72 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0613"
+        },
+        {
+            "type": "abnormality",
+            "id": "relaxation atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "large"
+        },
+        {
+            "type": "abnormality",
+            "id": "left hemidiaphragm"
+        },
+        {
+            "type": "abnormality",
+            "id": "relaxation atelectasis, pleural effusion"
+        },
+        {
+            "type": "lesion",
+            "id": "mass"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0613",
+            "target": "relaxation atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0613",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0613",
+            "target": "left hemidiaphragm"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0613",
+            "target": "relaxation atelectasis, pleural effusion"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0613",
+            "target": "mass"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion",
+            "target": "large"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "large",
+            "target": "relaxation atelectasis, pleural effusion"
+        }
+    ]
+}

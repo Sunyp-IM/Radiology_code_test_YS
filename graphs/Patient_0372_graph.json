@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0372"
+        },
+        {
+            "type": "abnormality",
+            "id": "volume loss"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0372",
+            "target": "volume loss"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1606"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, bibasal atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "bibasal atelectasis"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1606",
+            "target": "interstitial pulmonary edema, bibasal atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1606",
+            "target": "interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1606",
+            "target": "bibasal atelectasis"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "bibasal atelectasis",
+            "target": "small"
+        }
+    ]
+}

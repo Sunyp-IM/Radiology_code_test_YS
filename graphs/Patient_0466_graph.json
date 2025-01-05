@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0466"
+        },
+        {
+            "type": "lesion",
+            "id": "nodule"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "lesion",
+            "id": "nodules"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0466",
+            "target": "nodule"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0466",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0466",
+            "target": "nodules"
+        }
+    ]
+}

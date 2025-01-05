@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1494"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        },
+        {
+            "type": "disease",
+            "id": "hiatal hernia"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1494",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1494",
+            "target": "hiatal hernia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1494",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1494",
+            "target": "atelectasis"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1026"
+        },
+        {
+            "type": "abnormality",
+            "id": "left hemidiaphragm, loop of bowel"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1026",
+            "target": "left hemidiaphragm, loop of bowel"
+        }
+    ]
+}

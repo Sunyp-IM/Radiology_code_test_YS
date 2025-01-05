@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1377"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "bibasilar subsegmental atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1377",
+            "target": "subsegmental atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1377",
+            "target": "bibasilar subsegmental atelectasis"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1080"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1080",
+            "target": "subsegmental atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1080",
+            "target": "subsegmental atelectasis"
+        }
+    ]
+}

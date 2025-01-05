@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0285"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial opacities, perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "Atherosclerotic"
+        },
+        {
+            "type": "abnormality",
+            "id": "thoracic kyphosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0285",
+            "target": "interstitial opacities, perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0285",
+            "target": "Atherosclerotic"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0285",
+            "target": "thoracic kyphosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0285",
+            "target": "interstitial pulmonary edema"
+        }
+    ]
+}

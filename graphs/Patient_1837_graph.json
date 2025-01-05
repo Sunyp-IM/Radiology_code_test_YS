@@ -1,0 +1,108 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1837"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "small pleural effusions"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlarged main pulmonary artery"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "large"
+        },
+        {
+            "type": "disease",
+            "id": "pulmonary hypertension"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlarged cardiac silhouette"
+        },
+        {
+            "type": "abnormality",
+            "id": "small pleural effusions, pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1837",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1837",
+            "target": "left basilar opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1837",
+            "target": "small pleural effusions"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1837",
+            "target": "enlarged main pulmonary artery"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1837",
+            "target": "pulmonary hypertension"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1837",
+            "target": "small pleural effusions, pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1837",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small pleural effusions",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "small pleural effusions, pulmonary edema"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "enlarged main pulmonary artery",
+            "target": "large"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pulmonary hypertension",
+            "target": "enlarged cardiac silhouette"
+        }
+    ]
+}

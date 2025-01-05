@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0399"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "hiatus hernia, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcification"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial edema, opacities"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0399",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0399",
+            "target": "hiatus hernia, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0399",
+            "target": "calcification"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0399",
+            "target": "interstitial edema, opacities"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0399",
+            "target": "pneumonia"
+        }
+    ]
+}

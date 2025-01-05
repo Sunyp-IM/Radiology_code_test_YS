@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1243"
+        },
+        {
+            "type": "disease",
+            "id": "COPD"
+        },
+        {
+            "type": "abnormality",
+            "id": "hyperinflated lungs"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1243",
+            "target": "COPD"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1243",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "COPD",
+            "target": "hyperinflated lungs"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1811"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness, interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia, ARDS"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1811",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1811",
+            "target": "perihilar fullness, interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1811",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1811",
+            "target": "pneumonia, ARDS"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1811",
+            "target": "pleural effusion"
+        }
+    ]
+}

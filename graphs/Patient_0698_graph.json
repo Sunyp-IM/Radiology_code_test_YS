@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0698"
+        },
+        {
+            "type": "abnormality",
+            "id": "nodular opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0698",
+            "target": "nodular opacities"
+        }
+    ]
+}

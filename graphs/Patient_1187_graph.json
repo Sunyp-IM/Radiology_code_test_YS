@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1187"
+        },
+        {
+            "type": "abnormality",
+            "id": "hyperinflated"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes, rib fractures"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1187",
+            "target": "hyperinflated"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1187",
+            "target": "subsegmental atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1187",
+            "target": "degenerative changes, rib fractures"
+        }
+    ]
+}

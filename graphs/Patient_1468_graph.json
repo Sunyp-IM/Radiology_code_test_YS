@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1468"
+        },
+        {
+            "type": "abnormality",
+            "id": "upper lobe emphysema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1468",
+            "target": "upper lobe emphysema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1468",
+            "target": "atelectasis"
+        }
+    ]
+}

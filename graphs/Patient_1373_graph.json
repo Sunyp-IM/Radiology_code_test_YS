@@ -1,0 +1,45 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1373"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, atelectasis"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "right basilar atelectasis, pleural effusion"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1373",
+            "target": "pleural effusion, atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1373",
+            "target": "right basilar atelectasis, pleural effusion"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion, atelectasis",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "right basilar atelectasis, pleural effusion"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0129"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "lesion",
+            "id": "nodule"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar congestion, interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary vascular congestion, interstitial edema"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0129",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0129",
+            "target": "nodule"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0129",
+            "target": "perihilar congestion, interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0129",
+            "target": "pulmonary vascular congestion, interstitial edema"
+        }
+    ]
+}

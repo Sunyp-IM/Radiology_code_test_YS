@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1709"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural sinus tract"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1709",
+            "target": "pleural sinus tract"
+        }
+    ]
+}

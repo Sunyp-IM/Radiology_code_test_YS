@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0380"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlarged cardiac silhouette"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, aspiration, opacities, infection"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0380",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0380",
+            "target": "enlarged cardiac silhouette"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0380",
+            "target": "atelectasis, aspiration, opacities, infection"
+        }
+    ]
+}

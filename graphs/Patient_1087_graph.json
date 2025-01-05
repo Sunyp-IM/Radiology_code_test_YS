@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1087"
+        },
+        {
+            "type": "disease",
+            "id": "cancer, lung cancer"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial edema, low lung volumes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1087",
+            "target": "cancer, lung cancer"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1087",
+            "target": "interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1087",
+            "target": "interstitial edema, low lung volumes"
+        }
+    ]
+}

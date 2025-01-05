@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1557"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcifications, cardiomegaly"
+        },
+        {
+            "type": "abnormality",
+            "id": "thoracic degenerative"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema, cardiomegaly"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1557",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1557",
+            "target": "calcifications, cardiomegaly"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1557",
+            "target": "thoracic degenerative"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1557",
+            "target": "pulmonary edema, cardiomegaly"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0352"
+        },
+        {
+            "type": "abnormality",
+            "id": "vascular congestion, perihilar fullness"
+        },
+        {
+            "type": "disease",
+            "id": "hiatal hernia"
+        },
+        {
+            "type": "abnormality",
+            "id": "posttraumatic deformity, subluxation"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0352",
+            "target": "vascular congestion, perihilar fullness"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0352",
+            "target": "hiatal hernia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0352",
+            "target": "posttraumatic deformity, subluxation"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0707"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes, opacity"
+        },
+        {
+            "type": "lesion",
+            "id": "nodularity"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "lesion_location",
+            "id": "right basilar, right lung, pleural"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0707",
+            "target": "low lung volumes, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0707",
+            "target": "opacity"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "nodularity",
+            "target": "right basilar, right lung, pleural"
+        }
+    ]
+}

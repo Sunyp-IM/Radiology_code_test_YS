@@ -1,0 +1,76 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1674"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, aspiration"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration, opacities, infection, fibrosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial lung disease"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1674",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1674",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1674",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1674",
+            "target": "aspiration, opacities, infection, fibrosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1674",
+            "target": "interstitial lung disease"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1674",
+            "target": "enlargement of the cardiac"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "atelectasis, aspiration"
+        }
+    ]
+}

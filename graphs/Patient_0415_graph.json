@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0415"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0415",
+            "target": "low lung volumes"
+        }
+    ]
+}

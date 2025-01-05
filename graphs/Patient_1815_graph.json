@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1815"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema, opacities, opacity"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1815",
+            "target": "pulmonary edema, opacities, opacity"
+        }
+    ]
+}

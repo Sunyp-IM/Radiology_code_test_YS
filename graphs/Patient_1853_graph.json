@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1853"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "basilar subsegmental atelectasis, small pleural effusions"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1853",
+            "target": "subsegmental atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1853",
+            "target": "basilar subsegmental atelectasis, small pleural effusions"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "basilar subsegmental atelectasis, small pleural effusions",
+            "target": "small"
+        }
+    ]
+}

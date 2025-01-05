@@ -1,0 +1,85 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0535"
+        },
+        {
+            "type": "disease",
+            "id": "COPD, AML"
+        },
+        {
+            "type": "abnormality",
+            "id": "reticular nodular opacities"
+        },
+        {
+            "type": "lesion",
+            "id": "nodularity"
+        },
+        {
+            "type": "lesion_location",
+            "id": "upper"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities, emphysema"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "disease",
+            "id": "cancer, lung cancer"
+        },
+        {
+            "type": "abnormality",
+            "id": "infection"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0535",
+            "target": "COPD, AML"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0535",
+            "target": "reticular nodular opacities"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0535",
+            "target": "nodularity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0535",
+            "target": "opacities, emphysema"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0535",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0535",
+            "target": "cancer, lung cancer"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "nodularity",
+            "target": "upper"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "cancer, lung cancer",
+            "target": "infection"
+        }
+    ]
+}

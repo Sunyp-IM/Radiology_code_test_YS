@@ -1,0 +1,85 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0742"
+        },
+        {
+            "type": "abnormality",
+            "id": "hazy bibasilar opacities, low lung volumes"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "thoracic vertebral compression fracture"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, atelectasis"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration"
+        },
+        {
+            "type": "abnormality",
+            "id": "compression"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0742",
+            "target": "hazy bibasilar opacities, low lung volumes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0742",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0742",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0742",
+            "target": "thoracic vertebral compression fracture"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0742",
+            "target": "pleural effusion, atelectasis"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0742",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0742",
+            "target": "compression"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration"
+        }
+    ]
+}

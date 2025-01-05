@@ -1,0 +1,76 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0088"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness, interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "nodular opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "right effusion"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiomediastinal"
+        },
+        {
+            "type": "disease",
+            "id": "CHF"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary interstitial edema, cardiomegaly"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0088",
+            "target": "perihilar fullness, interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0088",
+            "target": "nodular opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0088",
+            "target": "right effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0088",
+            "target": "enlargement of the cardiomediastinal"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0088",
+            "target": "CHF"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "right effusion",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "CHF",
+            "target": "pulmonary interstitial edema, cardiomegaly"
+        }
+    ]
+}

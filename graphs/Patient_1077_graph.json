@@ -1,0 +1,85 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1077"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "nodular opacities"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "8 mm"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis, nodular opacities, aspiration"
+        },
+        {
+            "type": "lesion",
+            "id": "nodule"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1077",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1077",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1077",
+            "target": "nodular opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1077",
+            "target": "enlargement of the cardiac"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1077",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1077",
+            "target": "nodule"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "nodular opacities",
+            "target": "8 mm"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "subsegmental atelectasis, nodular opacities, aspiration"
+        }
+    ]
+}

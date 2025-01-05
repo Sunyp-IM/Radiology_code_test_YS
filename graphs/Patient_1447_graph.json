@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1447"
+        },
+        {
+            "type": "lesion",
+            "id": "nodules"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1447",
+            "target": "nodules"
+        }
+    ]
+}

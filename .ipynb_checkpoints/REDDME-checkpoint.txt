@@ -1,0 +1,30 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Create a directed graph
+G = nx.DiGraph()
+
+# Add nodes (representing patients, diseases, lesions, etc.)
+G.add_node("Patient1", label="Patient", diseases=["Lung Cancer"], lesions=["Lung Nodule"])
+G.add_node("Patient2", label="Patient", diseases=["Pneumonia"], lesions=["Lung Infection"])
+
+# Add nodes for diseases and lesions
+G.add_node("Lung Cancer", label="Disease", description="A disease caused by abnormal cell growth in the lungs.")
+G.add_node("Pneumonia", label="Disease", description="An infection that inflames the air sacs in one or both lungs.")
+G.add_node("Lung Nodule", label="Lesion", description="A small growth in the lung, which can be benign or malignant.")
+G.add_node("Lung Infection", label="Lesion", description="An infection in the lungs that can cause inflammation.")
+
+# Add edges to represent relationships
+G.add_edge("Patient1", "Lung Cancer", relationship="HAS_DISEASE")
+G.add_edge("Patient1", "Lung Nodule", relationship="HAS_LESION")
+G.add_edge("Patient2", "Pneumonia", relationship="HAS_DISEASE")
+G.add_edge("Patient2", "Lung Infection", relationship="HAS_LESION")
+
+# Visualization using Matplotlib
+plt.figure(figsize=(10, 8))
+pos = nx.spring_layout(G)
+nx.draw(G, pos, with_labels=True, node_size=3000, node_color='skyblue', font_size=10, font_weight='bold')
+edge_labels = nx.get_edge_attributes(G, 'relationship')
+nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+plt.title("Graph of Patients, Diseases, and Lesions")
+plt.show()

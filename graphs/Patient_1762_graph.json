@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1762"
+        },
+        {
+            "type": "lesion",
+            "id": "mass"
+        },
+        {
+            "type": "lesion_location",
+            "id": "lower"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_1762",
+            "target": "mass"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "mass",
+            "target": "lower"
+        }
+    ]
+}

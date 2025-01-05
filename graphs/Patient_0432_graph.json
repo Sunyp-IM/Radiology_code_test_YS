@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0432"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "4.2 cm"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "rib fracture"
+        },
+        {
+            "type": "lesion",
+            "id": "mass"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0432",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0432",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0432",
+            "target": "rib fracture"
+        },
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0432",
+            "target": "mass"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "opacity",
+            "target": "4.2 cm"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0659"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, interstitial lung disease, interstitial opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial disease, pulmonary edema, opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0659",
+            "target": "atelectasis, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0659",
+            "target": "interstitial pulmonary edema, interstitial lung disease, interstitial opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0659",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0659",
+            "target": "interstitial disease, pulmonary edema, opacities"
+        }
+    ]
+}

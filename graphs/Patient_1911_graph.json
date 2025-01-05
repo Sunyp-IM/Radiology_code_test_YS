@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1911"
+        },
+        {
+            "type": "disease",
+            "id": "bronchitis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1911",
+            "target": "bronchitis"
+        }
+    ]
+}

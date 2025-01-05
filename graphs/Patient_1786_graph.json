@@ -1,0 +1,72 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1786"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion, atelectasis, opacities"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "large"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration"
+        },
+        {
+            "type": "abnormality",
+            "id": "pleural effusion"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1786",
+            "target": "pleural effusion, atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1786",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1786",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1786",
+            "target": "atelectasis, opacities"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pleural effusion, atelectasis, opacities",
+            "target": "large"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "large",
+            "target": "pleural effusion"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration"
+        }
+    ]
+}

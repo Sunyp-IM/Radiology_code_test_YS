@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1921"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacity, atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1921",
+            "target": "left basilar opacity, atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1921",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "atelectasis",
+            "target": "small"
+        }
+    ]
+}

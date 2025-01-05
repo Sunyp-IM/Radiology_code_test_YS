@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0512"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe atelectasis, pleural effusion, cardiomegaly"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "large"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0512",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "lower lobe atelectasis, pleural effusion, cardiomegaly"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "lower lobe atelectasis, pleural effusion, cardiomegaly",
+            "target": "large"
+        }
+    ]
+}

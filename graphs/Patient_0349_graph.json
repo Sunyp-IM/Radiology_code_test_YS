@@ -1,0 +1,63 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0349"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "hiatus hernia"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "large"
+        },
+        {
+            "type": "abnormality",
+            "id": "deformity"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, hiatus hernia, cardiomegaly"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0349",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0349",
+            "target": "hiatus hernia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0349",
+            "target": "deformity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0349",
+            "target": "interstitial pulmonary edema, hiatus hernia, cardiomegaly"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "hiatus hernia",
+            "target": "large"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "large",
+            "target": "interstitial pulmonary edema, hiatus hernia, cardiomegaly"
+        }
+    ]
+}

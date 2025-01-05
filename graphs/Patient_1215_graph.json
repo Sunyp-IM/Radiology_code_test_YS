@@ -1,0 +1,99 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1215"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial airspace opacities, lungs right greater"
+        },
+        {
+            "type": "abnormality",
+            "id": "small pleural effusions, pleural effusions blunt"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "vascular calcifications"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "asymmetric pulmonary edema, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1215",
+            "target": "interstitial airspace opacities, lungs right greater"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1215",
+            "target": "small pleural effusions, pleural effusions blunt"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1215",
+            "target": "vascular calcifications"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1215",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1215",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1215",
+            "target": "pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1215",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small pleural effusions, pleural effusions blunt",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "asymmetric pulmonary edema, aspiration"
+        }
+    ]
+}

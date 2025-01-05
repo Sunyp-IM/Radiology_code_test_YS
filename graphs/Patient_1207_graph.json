@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1207"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "hyperinflated, opacities, emphysema"
+        },
+        {
+            "type": "abnormality",
+            "id": "hyperinflated lungs, opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1207",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1207",
+            "target": "hyperinflated, opacities, emphysema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1207",
+            "target": "hyperinflated lungs, opacities"
+        }
+    ]
+}

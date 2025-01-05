@@ -1,0 +1,54 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1589"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "small pleural effusions"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1589",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1589",
+            "target": "small pleural effusions"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1589",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small pleural effusions",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "atelectasis"
+        }
+    ]
+}

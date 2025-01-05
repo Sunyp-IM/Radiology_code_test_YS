@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1661"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiomediastinal"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1661",
+            "target": "enlargement of the cardiomediastinal"
+        }
+    ]
+}

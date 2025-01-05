@@ -1,0 +1,63 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0049"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "lesion_size",
+            "id": "5 cm"
+        },
+        {
+            "type": "lesion",
+            "id": "mass"
+        },
+        {
+            "type": "lesion_size",
+            "id": "5 cm, large"
+        },
+        {
+            "type": "lesion_location",
+            "id": "lingula"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0049",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "opacity",
+            "target": "5 cm"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "opacity",
+            "target": "5 cm, large"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "5 cm",
+            "target": "mass"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "mass",
+            "target": "lingula"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "mass",
+            "target": "5 cm, large"
+        }
+    ]
+}

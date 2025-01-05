@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1250"
+        },
+        {
+            "type": "abnormality",
+            "id": "rib fractures"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1250",
+            "target": "rib fractures"
+        }
+    ]
+}

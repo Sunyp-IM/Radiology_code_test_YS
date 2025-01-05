@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0609"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "Compression deformities, compression"
+        },
+        {
+            "type": "abnormality",
+            "id": "compression, deformity"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary interstitial edema, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "infection"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0609",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0609",
+            "target": "Compression deformities, compression"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0609",
+            "target": "compression, deformity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0609",
+            "target": "pulmonary interstitial edema, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0609",
+            "target": "infection"
+        }
+    ]
+}

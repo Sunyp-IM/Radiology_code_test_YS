@@ -1,0 +1,58 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1798"
+        },
+        {
+            "type": "disease",
+            "id": "pulmonary fibrosis, interstitial pulmonary fibrosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "fibrosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "aspiration, opacities"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1798",
+            "target": "pulmonary fibrosis, interstitial pulmonary fibrosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1798",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1798",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pulmonary fibrosis, interstitial pulmonary fibrosis",
+            "target": "fibrosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "aspiration, opacities"
+        }
+    ]
+}

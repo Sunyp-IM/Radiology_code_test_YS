@@ -1,0 +1,72 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1808"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "small pleural effusions"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, small pleural effusions"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1808",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1808",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1808",
+            "target": "small pleural effusions"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1808",
+            "target": "interstitial pulmonary edema, small pleural effusions"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1808",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small pleural effusions",
+            "target": "small"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "small",
+            "target": "interstitial pulmonary edema, small pleural effusions"
+        }
+    ]
+}

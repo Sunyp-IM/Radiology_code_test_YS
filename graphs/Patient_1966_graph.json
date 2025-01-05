@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1966"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiac mediastinal silhouette"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacities, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1966",
+            "target": "left basilar opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1966",
+            "target": "enlargement of the cardiac mediastinal silhouette"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_1966",
+            "target": "pneumonia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "pneumonia",
+            "target": "left basilar opacities, aspiration"
+        }
+    ]
+}

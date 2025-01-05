@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0839"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, hemorrhage, opacity"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        },
+        {
+            "type": "abnormality",
+            "id": "subsegmental atelectasis"
+        },
+        {
+            "type": "disease",
+            "id": "cancer, lung cancer"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0839",
+            "target": "atelectasis, hemorrhage, opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0839",
+            "target": "subsegmental atelectasis"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0839",
+            "target": "cancer, lung cancer"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "atelectasis, hemorrhage, opacity",
+            "target": "small"
+        }
+    ]
+}

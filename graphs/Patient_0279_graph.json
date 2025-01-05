@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0279"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0279",
+            "target": "lower lobe atelectasis"
+        }
+    ]
+}

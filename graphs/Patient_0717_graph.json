@@ -1,0 +1,76 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0717"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacity"
+        },
+        {
+            "type": "abnormality",
+            "id": "bibasilar patchy opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness, interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "rib fractures"
+        },
+        {
+            "type": "abnormality",
+            "id": "bibasilar patchy opacities, atelectasis, aspiration"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary interstitial edema, small pleural effusions"
+        },
+        {
+            "type": "Abnormality_size",
+            "id": "small"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0717",
+            "target": "opacity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0717",
+            "target": "bibasilar patchy opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0717",
+            "target": "perihilar fullness, interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0717",
+            "target": "rib fractures"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0717",
+            "target": "bibasilar patchy opacities, atelectasis, aspiration"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0717",
+            "target": "pulmonary interstitial edema, small pleural effusions"
+        },
+        {
+            "relationship": "HAS_SIZE",
+            "source": "pulmonary interstitial edema, small pleural effusions",
+            "target": "small"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0452"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, atelectasis"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0452",
+            "target": "interstitial pulmonary edema, atelectasis"
+        }
+    ]
+}

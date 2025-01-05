@@ -1,0 +1,49 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1465"
+        },
+        {
+            "type": "abnormality",
+            "id": "perihilar fullness"
+        },
+        {
+            "type": "abnormality",
+            "id": "opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "tortuous thoracic aorta"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema, right effusion"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1465",
+            "target": "perihilar fullness"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1465",
+            "target": "opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1465",
+            "target": "tortuous thoracic aorta"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1465",
+            "target": "pulmonary edema, right effusion"
+        }
+    ]
+}

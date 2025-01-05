@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0766"
+        },
+        {
+            "type": "abnormality",
+            "id": "lower lobe atelectasis, pleural effusion"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0766",
+            "target": "lower lobe atelectasis, pleural effusion"
+        }
+    ]
+}

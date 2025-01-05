@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0972"
+        },
+        {
+            "type": "abnormality",
+            "id": "left hemidiaphragm, opacity"
+        },
+        {
+            "type": "disease",
+            "id": "pneumonia"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0972",
+            "target": "left hemidiaphragm, opacity"
+        },
+        {
+            "relationship": "HAS_DIAGNOSIS",
+            "source": "Patient_0972",
+            "target": "pneumonia"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0551"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema, perihilar fullness"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0551",
+            "target": "interstitial pulmonary edema, perihilar fullness"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1641"
+        },
+        {
+            "type": "abnormality",
+            "id": "low lung volumes, opacities"
+        },
+        {
+            "type": "abnormality",
+            "id": "left basilar opacities, low lung volumes"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1641",
+            "target": "low lung volumes, opacities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1641",
+            "target": "left basilar opacities, low lung volumes"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0597"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis"
+        },
+        {
+            "type": "abnormality",
+            "id": "left clavicular fracture deformity"
+        },
+        {
+            "type": "abnormality",
+            "id": "rib fractures"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0597",
+            "target": "atelectasis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0597",
+            "target": "left clavicular fracture deformity"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0597",
+            "target": "rib fractures"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0101"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial opacities, perihilar fullness, interstitial edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, opacities, fibrosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "atherosclerotic calcifications, Atherosclerotic, ectasia"
+        },
+        {
+            "type": "abnormality",
+            "id": "rib fracture deformities"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "atelectasis, fibrosis"
+        },
+        {
+            "type": "abnormality",
+            "id": "ectasia"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0101",
+            "target": "interstitial opacities, perihilar fullness, interstitial edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0101",
+            "target": "atelectasis, opacities, fibrosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0101",
+            "target": "atherosclerotic calcifications, Atherosclerotic, ectasia"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0101",
+            "target": "rib fracture deformities"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0101",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0101",
+            "target": "atelectasis, fibrosis"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0101",
+            "target": "ectasia"
+        }
+    ]
+}

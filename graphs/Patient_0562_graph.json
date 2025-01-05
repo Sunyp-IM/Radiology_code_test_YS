@@ -1,0 +1,31 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0562"
+        },
+        {
+            "type": "lesion",
+            "id": "granuloma, calcified granuloma"
+        },
+        {
+            "type": "lesion_location",
+            "id": "left upper"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_LESION",
+            "source": "Patient_0562",
+            "target": "granuloma, calcified granuloma"
+        },
+        {
+            "relationship": "LOCATED_IN",
+            "source": "granuloma, calcified granuloma",
+            "target": "left upper"
+        }
+    ]
+}

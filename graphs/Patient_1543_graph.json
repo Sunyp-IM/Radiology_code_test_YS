@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1543"
+        },
+        {
+            "type": "abnormality",
+            "id": "interstitial pulmonary edema"
+        },
+        {
+            "type": "abnormality",
+            "id": "enlargement of the cardiomediastinal"
+        },
+        {
+            "type": "abnormality",
+            "id": "pulmonary edema, cardiomegaly"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1543",
+            "target": "interstitial pulmonary edema"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1543",
+            "target": "enlargement of the cardiomediastinal"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1543",
+            "target": "pulmonary edema, cardiomegaly"
+        }
+    ]
+}

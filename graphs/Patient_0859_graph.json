@@ -1,0 +1,40 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_0859"
+        },
+        {
+            "type": "abnormality",
+            "id": "calcifications of the thoracic aorta"
+        },
+        {
+            "type": "abnormality",
+            "id": "degenerative changes"
+        },
+        {
+            "type": "abnormality",
+            "id": "deformity"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0859",
+            "target": "calcifications of the thoracic aorta"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0859",
+            "target": "degenerative changes"
+        },
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_0859",
+            "target": "deformity"
+        }
+    ]
+}

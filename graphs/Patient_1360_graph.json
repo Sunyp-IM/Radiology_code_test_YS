@@ -1,0 +1,22 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "patient",
+            "id": "Patient_1360"
+        },
+        {
+            "type": "abnormality",
+            "id": "cardiomegaly, atelectasis, aspiration"
+        }
+    ],
+    "links": [
+        {
+            "relationship": "HAS_ABNORMALITY",
+            "source": "Patient_1360",
+            "target": "cardiomegaly, atelectasis, aspiration"
+        }
+    ]
+}
