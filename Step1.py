@@ -6,12 +6,14 @@ import re
 
 
 #### Define the current working directory
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-cwd = os.getcwd()
+# define the base directory
+base_dir = os.path.abspath(os.path.join(os.getcwd(), "..", ".."))
 
-#### Load the radiologist report file
-report_path = path = os.path.abspath(os.path.join(os.getcwd(), os.pardir)) + \
-    '/ProgrammingTest_Data/Radiology Reports.pkl'
+#print("Current Working Directory:", current_working_dir)
+print("base_dir:", base_dir)
+
+# Read the radiology reports
+report_path = os.path.join(base_dir, 'ProgrammingTest_Data/Radiology Reports.pkl')
 radiology_reports = pd.read_pickle(report_path)
 
 #### Add a columns for abberiating the PatientID
@@ -191,13 +193,17 @@ def add_edge_if_non_empty(graph, node1_value, node2_value, nodes_relationship):
 columns = ['PatientID_A', 'Disease', 'Abnormality', 'Abnormality_size', 'Lesion', 'Lesion_location', 'Lesion_size']
 df0 = pd.DataFrame(columns=columns)
 
-## Define a list to store network graphs of indivial patients
-graph_path_list = []
+## Define a dictionary to store the graphs, with Patient IDs as keys
+graphs_dict = {}
 
 ## Extract information from each individual patient reports and construct network graphs for them 
+xray_image_path = os.path.join(base_dir, 'ProgrammingTest_Data/png')
+
 for index, row in radiology_reports.iterrows():
     patient_id = row['PatientID_A']
     report_text = row['FULL_REPORT'] 
+    xray_image_filename = row['PATH']
+
     # Normalize the report text to lower case for case-insensitive matching
     normalized_report_text = report_text.lower()
     
@@ -290,10 +296,15 @@ for index, row in radiology_reports.iterrows():
     
     ## Construct the graphic network
     # Create an empty graph
-    G = nx.Graph()    
+    G = nx.Graph()  
+
+     # Create a graph for each patient
+    add_node_if_not_empty(G, patient_id, 'patient')
+    add_node_if_not_empty(G, xray_image_filename, 'X-ray image')
+    add_edge_if_non_empty(G, patient_id, xray_image_filename, 'HAS_IMAGE')  
+
     for i, row_df in df.iterrows(): 
         # Add notes
-        add_node_if_not_empty(G, df.loc[i, 'PatientID_A'], 'patient')
         add_node_if_not_empty(G, df.loc[i, 'Disease'], 'disease')
         add_node_if_not_empty(G, df.loc[i, 'Abnormality'], 'abnormality')
         add_node_if_not_empty(G, df.loc[i, 'Abnormality_size'], 'Abnormality_size')
@@ -318,87 +329,184 @@ for index, row in radiology_reports.iterrows():
         add_edge_if_non_empty(G, df.loc[i, 'Lesion'], df.loc[i, 'Lesion_size'], 'HAS_SIZE')
         
     ## Add the graph path the the graph_list
-    graph_path_list.append(G) 
+    graphs_dict[patient_id] = json_graph.node_link_data(G)
     
-    ## Save the graphic network to json file
-    # Convert the graph to a JSON-compatible dictionary
-    data = json_graph.node_link_data(G)
-    file_path = 'graphs/' + patient_id + '_graph.json'
-    with open(file_path, 'w') as f:
-        json.dump(data, f, indent=4)
+## Save all the graphic network to json file
+# Convert the graph to a JSON-compatible dictionary
+output_file = 'all_graphs.json'
+with open(output_file, 'w') as f:
+    json.dump(graphs_dict, f, indent=2)
+print(f"All graphs have been saved to {output_file}")
+    
+## Save df to file
+df0.to_csv('Extracted_info.csv')
 
-### Add a new column for graph_list to radiology_reports
-radiology_reports['Graph_path'] = graph_path_list
 
 
-#### Visualize the network graph and x-ray image
-from textwrap import wrap
-from textwrap import fill
+#### Extract the disease information, plot the network graoh, visualize the X-ray image for a specific patient from the graohic database 
+
+import json
+import networkx as nx
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+from networkx.readwrite import json_graph
+from textwrap import wrap
+from PIL import Image
+import os
 
-## Specify the patient
-patient_id_a = 'Patient_0100'
-patient_id = radiology_reports.loc[radiology_reports['PatientID_A'] == patient_id_a, 'PatientID'].values[0]
-report = radiology_reports.loc[radiology_reports['PatientID_A'] == patient_id_a, 'FULL_REPORT'].values[0]
-print(f'Report: \n{report}\n\n')
+# Load the JSON file containing the graphs
+with open('all_graphs.json', 'r') as f:
+    graphs_dict = json.load(f)
 
-## Load a network graph
-# Load the graph from the JSON file
-graph_file_path = 'graphs/Patient_0100_graph.json'
-with open(graph_file_path, 'r') as f:
-    data = json.load(f)
+# Specify the patient ID
+specified_patient_id = "Patient_0100"
 
-# Convert the JSON data to a networkx graph
-G = nx.node_link_graph(data)
+# Base directory for X-ray images (update with the correct path)
+xray_image_dir = os.path.join(base_dir, "ProgrammingTest_Data/png")
 
-# define the network graph
-subgraph_nodes = list(G.nodes)[:20]  # Take first 20 nodes for visualization
-subgraph = G.subgraph(subgraph_nodes)
-edge_labels = nx.get_edge_attributes(subgraph, 'relationship')
+# Check if the patient exists in the data
+if specified_patient_id in graphs_dict:
+    patient_graph = graphs_dict[specified_patient_id]
+    
+    # Extract nodes and edges
+    nodes = patient_graph.get("nodes", [])
+    edges = patient_graph.get("links", [])
+    
+    # Initialize variables to store disease and image file name
+    disease = None
+    image_file_name = None
+    
+    # Loop through the edges to find relationships
+    for edge in edges:
+        source = edge.get("source")
+        target = edge.get("target")
+        relationship = edge.get("relationship")
+        
+        # Check for disease
+        if relationship == "HAS_DIAGNOSIS" and source == specified_patient_id:
+            disease = target
+        
+        # Check for image file name
+        if relationship == "HAS_IMAGE" and source == specified_patient_id:
+            image_file_name = target
+    
+    # Load the network graph
+    subgraph = json_graph.node_link_graph(patient_graph)
+    
+    # Debugging: Check the graph structure
+    print("Nodes in graph:", subgraph.nodes())
+    print("Edges in graph:", subgraph.edges())
+    
+    if specified_patient_id not in subgraph.nodes():
+        raise ValueError(f"Node '{specified_patient_id}' is not in the graph.")
+    
+    # Generate positions for the nodes
+    pos = nx.spring_layout(subgraph)
+    edge_labels = nx.get_edge_attributes(subgraph, 'relationship')
+    
+    # Load the X-ray image
+    xray_image_path = os.path.join(xray_image_dir, image_file_name)
+    if os.path.exists(xray_image_path):
+        xray_image = Image.open(xray_image_path)
+    else:
+        raise FileNotFoundError(f"X-ray image not found at {xray_image_path}")
+    
+    # Create a figure with subplots
+    fig, axs = plt.subplots(1, 2, figsize=(20, 10))  # 1 row, 2 columns
+    
+    # Create the dynamic title for the plot
+    figure_title = f"The network graph and the X-ray image for {specified_patient_id}"
+    wrapped_figure_title = "\n".join(wrap(figure_title, 100))  # Wrap the title text to 100 characters per line
+    
+    # Set the super title of the figure
+    fig.suptitle(wrapped_figure_title, fontsize=14)
+    
+    # Plot the network graph in the first subplot
+    axs[0].set_title("Network Graph")
+    nx.draw(subgraph, pos, with_labels=True, node_size=3000, node_color='lightblue', font_size=10, ax=axs[0])
+    nx.draw_networkx_edge_labels(subgraph, pos, edge_labels=edge_labels, ax=axs[0])
+    
+    # Plot the X-ray image in the second subplot
+    axs[1].imshow(xray_image)
+    axs[1].set_title("X-ray Image")
+    axs[1].axis('off')  # Hide the axes for the image
+    
+    # Adjust layout to make room for the suptitle and ensure titles are visible
+    plt.tight_layout()
+    fig.subplots_adjust(top=0.85)
+    plt.show()
+        
+else:
+    print(f"Patient {specified_patient_id} not found in the data.")
 
-# Define the position layout for the nodes
-pos = nx.spring_layout(subgraph)
+
+#### find all patients with the disease "cancer" from the graph database
+import json
+import matplotlib.pyplot as plt
+import os
+from PIL import Image
 
 
-## Load the X-ray image
-path = os.path.abspath(os.path.join(cwd, os.pardir))
-xray_image_filename = radiology_reports.loc[radiology_reports['PatientID_A'] == patient_id_a, 'PATH'].values[0]
-xray_image_path = path + '/ProgrammingTest_Data/png/' + xray_image_filename
-xray_image = mpimg.imread(xray_image_path)
+## Load the JSON file containing the graphs
+with open('all_graphs.json', 'r') as f:
+    graphs_dict = json.load(f)
 
+## Define the disease to search for
+target_disease = "cancer"
+patients_with_disease = {}
 
-## Create a figure with subplots
-fig, axs = plt.subplots(1, 2, figsize=(20, 10))  # 1 row, 2 columns
+## Iterate through all graphs
+for patient_id, graph_data in graphs_dict.items():
+    # Get edges (links) for this patient
+    edges = graph_data.get("links", [])
+    nodes = graph_data.get("nodes", [])
+    
+    # Find the X-ray image file name
+    xray_image_filename = None
+    for edge in edges:
+        if edge.get("relationship") == "HAS_IMAGE" and edge.get("source") == patient_id:
+            xray_image_filename = edge.get("target")
+            break
+    
+    # Check for the target disease
+    for edge in edges:
+        if edge.get("relationship") == "HAS_DIAGNOSIS" and target_disease in edge.get("target", "").lower():
+            if xray_image_filename:
+                patients_with_disease[patient_id] = xray_image_filename
+            break
+
+# Output the results
+if patients_with_disease:
+    print(f"Patients with the disease '{target_disease}':")
+    print(", ".join(patients_with_disease))
+else:
+    print(f"No patients with the disease '{target_disease}' found.")
+
+# Plot X-ray image of the patients with the tarfet disease
+xray_image_dir = os.path.join(base_dir, 'ProgrammingTest_Data/png/')
 
 ## Create the dynamic title for the plot
-figure_title = f"The network graph and the X-ray image for {patient_id_a} ({patient_id})"
-wrapped_figure_title = "\n".join(wrap(figure_title, 100))  # Wrap the title text to 100 characters per line
-
 ## Set the super title of the figure
+figure_title = f"The X-ray image for patients have cancer"
+wrapped_figure_title = "\n".join(wrap(figure_title, 100))  # Wrap the title text to 100 characters per line
 fig.suptitle(wrapped_figure_title, fontsize=14)
 
-## Plot the network graph in the first subplot
-# Function to wrap text
-def wrap_labels(labels, width=20):
-    return {node: fill(label, width) for node, label in labels.items()}
+if patients_with_disease:
+    for patient_id, image_filename in patients_with_disease.items():
+        image_path = os.path.join(xray_image_dir, image_filename)
+        
+        # Check if the image file exists
+        if os.path.exists(image_path):
+            # Load and display the image
+            img = Image.open(image_path)
+            plt.figure(figsize=(6, 6))
+            plt.imshow(img, cmap="gray")
+            plt.axis("off")
+            plt.title(f"Patient: {patient_id} - {target_disease.capitalize()} X-ray")
+            plt.show()
+        else:
+            print(f"Image file for {patient_id} not found at {image_path}")
+else:
+    print(f"No X-ray images found for patients with the disease '{target_disease}'.")
 
-# Wrap the node labels
-wrapped_labels = wrap_labels({node: node for node in subgraph.nodes})
-
-#Plot the network graph
-axs[0].set_title("Network Graph")
-nx.draw(subgraph, pos, with_labels=True, labels=wrapped_labels, node_size=3000, node_color='lightblue', font_size=10, ax=axs[0])
-nx.draw_networkx_edge_labels(subgraph, pos, edge_labels=edge_labels, ax=axs[0])
 
 
-## Plot the X-ray image in the second subplot
-axs[1].imshow(xray_image)
-axs[1].set_title("X-ray Image")
-axs[1].axis('off')  # Hide the axes for the image
-
-# Adjust layout to make room for the suptitle and ensure titles are visible
-plt.tight_layout()
-fig.subplots_adjust(top=0.85)
-
-print(lesions)

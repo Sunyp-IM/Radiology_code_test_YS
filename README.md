@@ -22,7 +22,6 @@ Step by Step Approach
 
 Step by Step Approach
 
->>>>>>> origin/main
 Step 1: Organize Radiologist Reports into a Graph Database
 This is implemented with 'Step1.py'. The breakdown of the code is in test.ipynb. The code does the following:
 (1) Load the original X-ray report data. 
@@ -31,13 +30,19 @@ This is implemented with 'Step1.py'. The breakdown of the code is in test.ipynb.
 (4) Extract the diseases, abnormalities, lesions, locations and sizes from each report by match the defined medical terms to each report.
 (5) Construct the graphic network by defining the nodes and edges for each report. Save each graph to a single json file.
 (6) Visualize the network graph and the corresponding X-ray image.
-<<<<<<< HEAD
 
 
+Step 2: Develop AI Algorithms
+This is implemented with 'Step2.py'. An AI model for diagnose cancel was fitted. The breakdown of the code is also in test.ipynb. The code does the following:
+(1) Organize the original X-rag images, copy the images with dancer and without cancer into two different directories, respectively. 
+(2) Split both the images with and without cancer into training, validation and test dataset
+(3) Fit the model
+(4) 
 
-Step 2: Restructure Data for Educational Use
-Step 3: Develop AI Algorithms
-Step 4: Document Your Process (try to use Jupyter notebook)
+
+Step 3: Document the Process (try to use Jupyter notebook)
+The progress is documented in test.ipynb
+
 Step 5: Showcase Feasibility
 =======
 >>>>>>> origin/main
