@@ -51,6 +51,6 @@ This is implemented with 'Step3.py'. An AI model for diagnose cancel was fitted.
 Step 3: Document the Process (try to use Jupyter notebook)
 The progress is documented in test.ipynb
 
-Step 5: Showcase Feasibility
+Step 4: Showcase Feasibility
 =======
 >>>>>>> origin/main
